@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Slick-Slider Cdn -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <style>
+        *{
+            margin: 0;
+            padding:0%;
+            box-sizing: border-box;
+        }
+        .contaner .contaner-main{
+            width: 700px;
+        }
+        .contaner .contaner-main img{
+            width:700;
+        }
+        .main .main-slider{
+            width: 700;
+        }
+        .le{
+            position: relative;
+        }
+        .main{
+            position: absolute;
+            top: 10px;
+            right: 350px;
+        }
+        .main .main-slider{
+            width: 700px;
+            object-fit: cover;
+        }
+        .main .main-slider .main-main{
+            width: 750px;
+            overflow: hidden;
+            padding: 0 90px;
+        }
+
+    </style>         
+
+</head>
+<body>
+    <div class="tt">
+        <ul class="nav nav-bar">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#st">stop</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#ne">next</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="st">
+                <div class="le">
+                    <div class="contaner">
+                        <div class="contaner-main">
+                            <div><img src="/images/slid1.jpg" alt=""></div>
+                            <div><img src="/images/slid2.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="main-slider">
+                        <div class="main-main">
+                            <div class="main-hold" style="background-color: turquoise; color: white; height: 500px;">
+                                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, minima!</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque nemo, aliquam quas incidunt atque aperiam explicabo autem blanditiis sapiente nam.</p>
+                            </div>
+                        </div>
+                        <div class="main-main">
+                            <div class="main-hold" style="background-color: turquoise; color: white; height: 500px;">
+                                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, minima!</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque nemo, aliquam quas incidunt atque aperiam explicabo autem blanditiis sapiente nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="ne">
+                <div class="le">
+                    <div class="contaner">
+                        <div class="contaner-main">
+                        
+                            <div><img src="/images/slid2.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="main-slider">
+                        <div class="main-main">
+                            <div class="main-hold" style="background-color: yellow; color: white; height: 500px;">
+                                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, minima!</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque nemo, aliquam quas incidunt atque aperiam explicabo autem blanditiis sapiente nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slick Slider Cdn -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+	<!-- Script File  -->
+    <script>
+        $(document).ready(function(){
+  $('.contaner-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow:'.left-arrow',
+    nextArrow:'.right-arrow',
+    fade: true,
+    // dots: true,
+    asNavFor: '.main-slider',
+  });
+  $('.main-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.contaner-main',
+    dots: false,
+    arrows:false, 
+    centerMode: true,
+    focusOnSelect: true
+  });
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,1682 @@
+$black:#000;
+$white:#fff;
+$yellow: #ffcb08;
+$whitesmoke:#f4f4f4;
+$nav-text:#3d1a6f;
+$blue:#3d1a6e;
+$login:#ebe8f0;
+$dark-grey:#ccc;
+$light-grey:#eeee;
+$light-blue:#3d1a6f; 
+$pink:#c5168d;
+$light-black:#2f2f31;
+$input-back:#f5f5f5;
+$gray:#757575;
+$red:#ff0000;
+$Black_Light:#555;
+$blue-head:#4b0871;
+$grey-of:#666666;
+$snow:#f9f9f9;
+$para:#333333;
+$pink:#c6168d;
+%padding{
+    padding-top: 20px;
+    padding: 20px;
+    padding-left: 10px;
+}
+@mixin img1 {
+    background-image: url(/images/p_class.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    cursor: pointer;
+}
+@mixin bt-1 {
+    outline: none;
+    border: none;
+    background-color: $input-back;
+    padding: 10px 10px;
+    width: 320px;
+}
+@mixin button {
+    outline:none;
+    border: none;
+    color: $blue;
+    padding: 8px 14px;
+    background-color: $yellow;
+}
+@mixin label {
+    margin-bottom:10px;
+    display: block;
+    color: $blue;
+    font-size:15px;
+    padding-top: 20px;
+}
+@mixin img2 {
+    background-image: url(/images/p_calendar.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    cursor: pointer;
+}
+@mixin  container {
+    padding: 0 15px;
+    margin: auto;
+    max-width: 1170px;
+    width: 100%;
+}
+.cal{
+    background-image: url(/images/p_calendar.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    cursor: pointer;
+}
+#sel-6 {
+    -webkit-appearance: none;
+    background-image: url(/images/p_time.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    cursor: pointer;
+}
+#sel-1{
+    -webkit-appearance: none;
+    background-image: url(/images/p_plane_down.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    color: $black;
+    cursor: pointer;
+    font-size:15px;
+}
+#sel-2{
+    -webkit-appearance: none;
+    background-image: url(/images/p_plane_up.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    color: $black;
+    cursor: pointer;
+    font-size:15px;
+}
+#sel-4{
+    background-image: url(/images/p_child.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    color: $black;
+    cursor: pointer;
+}
+#sel-5{
+    -webkit-appearance: none;
+    background-image: url(/images/p_plane_up.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    color: $black;
+    cursor: pointer;
+    font-size:15px;
+    margin-bottom: 30px;
+}
+#marg{
+    margin-bottom: 15px;
+}
+.marg-2{
+    margin-top: 30px;
+}
+#pad{
+    padding-top: 50px;
+}
+.back{
+    background-color: $blue;
+}
+.align{
+    text-align: center;
+}
+#paf{
+    padding-top: 30px;
+}
+#paf-1{
+    padding-top: 10px;
+}
+#not{
+    color: $grey-of;
+    text-transform: capitalize;
+    &:hover{
+        color: $light-blue;
+    }
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;                                
+}
+.bar{
+    border-left: 1px solid $dark-grey;
+    padding: 4px;
+}
+#c1{
+    color: $white;
+    background-color: $light-blue;
+    padding: 0 10px;
+}
+#c2{
+    color: $blue;
+    background-color: $yellow;
+    padding: 0 10px;
+}
+#c3{
+    color: $pink;
+    padding: 0 10px;
+}
+header{
+    background-color: $whitesmoke;
+    .top{
+        display: flex;
+        justify-content: flex-end;
+        height: 45px;
+        padding: 0 20px;
+        .top-main{
+            display: flex;
+            justify-content: space-between;
+            .top-hold1{
+                img{
+                    height: 45px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .top-nav{
+            position:relative;
+            padding-top: 5px;
+            ul{
+                li{
+                    display: inline-block;
+                    a{
+                        text-align: center;
+                        padding-left: 20px;
+                        text-decoration: none;
+                        color: $nav-text;
+                        font-size: 12px;
+                        img{
+                            object-fit: cover;
+                        }
+                        .fas{
+                            font-size: 16px;
+                            color: $nav-text;
+                            padding: 5px 0 0 5px;
+                        }
+                        .far{
+                            font-size: 17px;
+                            color: $nav-text;
+                            padding: 5px 0 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section{
+    border-bottom: 3px solid $yellow;
+    background-color: $blue;
+    .nav-main{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        .nav-hold{
+            padding-top: 8px;
+            img{
+                width: 150px;
+                object-fit: cover;
+            }
+        }
+        .nav-hold-2{
+            border-bottom: 2px solid red;
+            position: relative;
+            background-color: $dark-grey;
+            padding: 8px 18px;
+            img{
+                display: block;
+                object-fit: cover;
+            }
+            :before{
+                position: absolute;
+                bottom: 24px;
+                left: 6px;
+                content: "";
+                margin-bottom:5px;
+                z-index: 1;
+                background-color:$light-grey;
+                height: 1px;
+                width: 90%;
+
+            }
+            a{
+                text-decoration: none;
+                color: $blue;
+                font-size:15px;
+                font-weight: 700;
+            }
+        }
+    }
+    //nav bar
+    .nav{
+        .wrapper{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1;
+            .nav-links{
+                padding-top: 23px;
+                li{
+                    list-style: none;
+                    float: left;
+                    a{
+                        color: $white;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        margin-left:20px;
+                        position: relative;
+                        &:hover{
+                            color: $yellow;
+                        }
+                        &:hover:after{
+                            width: 100%;
+                        }
+                    }
+                    ::after{
+                        position: absolute;
+                        content: "";
+                        bottom: -10px;
+                        left: 0;
+                        background-color: $yellow;
+                        width: 0;
+                        height: 1px;
+                        transition: 0.3s; 
+                    }
+                    .mega-class
+                    {
+                        position: absolute;
+                        left: -50%;
+                        padding: 0 30px;
+                        top: 100px;
+                        width: 200%;
+                        opacity: 0;
+                        visibility: hidden;
+                        .content{
+                            background-color:$blue;
+                            padding: 25px 40px;
+                            display: flex;
+                            justify-content: space-between;
+                            .main{
+                                width: 40%;
+                                line-height: 50px;
+                                .mega-links{
+                                    li{
+                                        padding: 0 20px;
+                                        display: block;
+                                        a{
+                                            padding: 10px 20px;
+                                            color: $yellow;
+                                            font-size: 17px;
+                                            display: block;
+                                            width: 100%;
+                                            border-left: 1px solid $Black_Light;
+                                            &:hover{
+                                                border-left: 6px solid $yellow;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .mega-hold{
+                                border-left: 1px solid $Black_Light;
+                                padding-left: 10px;
+                                img{
+                                    display: block;
+                                    object-fit: cover;
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+                }
+                :hover .mega-class{
+                    transition: all 0.7s;
+                    top: 54px;
+                    visibility: visible;
+                    opacity: 1;
+               }
+            }
+        }
+    }
+    //mega nav bar 
+}
+.slider{
+    .slider-hold{
+        overflow: hidden;
+        .slider-rel{
+            position: relative;
+            img{
+                width: 100%;
+                height: 550px;
+                object-fit: cover;
+            }
+            .text-1{
+                position: absolute;
+                top:50px;
+                left: 80px;
+                // animation: fadeIn .3s linear normal .4s;
+                h1{
+                    text-transform: uppercase;
+                    font-size: 37px;
+                    font-weight: bold;
+                }
+            }
+            .text-2{
+                position: absolute;
+                top:110px;
+                left: 80px;
+                // animation: fadeIn .3s linear normal .4s;
+                h1{
+                    text-transform: uppercase;
+                    font-size: 37px;
+                    font-weight: bold;
+                }
+                p{
+                    color: $light-black;                    
+                    font-size: 20px;
+                    text-shadow: 1px 1px 1px rgba(97, 94, 94, 35%);
+                    // animation: fadeIn .3s linear normal .6s;
+                }
+            }
+            .text-3{
+                position: absolute;
+                top:170px;
+                left: 80px;
+                // animation: fadeIn .3s linear normal .4s;
+                h1{
+                    text-transform: uppercase;
+                    font-size: 37px;
+                    font-weight: bold;
+                }
+                button{
+                    @include button;
+                    border-radius: 20px;
+                    width: 180px;
+                    text-transform: uppercase;
+                    transition: .2s linear;
+                    // animation: fadeIn .3s linear normal .6s;
+                    &:hover{
+                        background-color: $nav-text;
+                        border: 1px solid rgba(102, 102, 102, 0.1);
+                        color: $white;
+                        font-size:16px;
+                    }
+                }
+            }
+        }
+    }
+}
+// Slider Dots CSS
+.slick-dots{
+    display: flex;
+    position: absolute;
+    bottom: 120px;
+    left: 100px;
+    list-style: none;
+    li{
+        margin: 0 10px;
+        .slick-active button{
+            border: none;
+            outline: none;
+            background-color: $blue;
+        }
+    }
+    button{
+        outline: none;
+        border: none;
+        display: block;
+        width: 16px;
+        height: 16px;
+        padding: 5px;
+        border-radius: 100%;
+        background-color: $white;
+        border: 2px solid $light-blue;
+        text-indent: -9999px;
+    }
+}
+.flight{
+    @include container;
+    .flight-back{
+        background-color: $white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .nav{
+            li{
+                a{
+                    color: $white;
+                    padding: 12px 0;
+                    text-decoration: none;
+                    text-transform: uppercase;                    
+                    .fal,.fas,.fad{
+                        margin-right: 6.6px;
+                        text-decoration: none;
+                    }
+                }
+                .active{
+                    background-color: $white;
+                    color: $blue;
+                }
+            }
+        }
+        .tab-content{
+            padding-top: 30px;
+            .tab-pane{
+                .nav-2{
+                    ul{
+                        li{
+                            margin-left: 10px;
+                            a{
+                                color: $blue;
+                                padding: 0 60px;
+                                transition: .3s all linear;
+                                border-bottom: 3px solid $dark-grey;
+                            }
+                            .active{
+                                border-bottom: 3px solid $blue;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-pane{
+                .cont{
+                    @include container;
+                    margin: 15px auto;
+                    text-align: center;
+                    p{
+                        color: $red;
+                        font-size:14px;
+                    }
+                }
+                .check-main{
+                    @include container;
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    grid-gap: 20px;
+                    .check-1{
+                        padding-bottom: 20px;
+                        label{
+                            @include label;
+                        }
+                        input[type=text]{
+                            @include bt-1;
+                            width: 250px
+                        }
+                        select{
+                            @include bt-1;
+                            color: $gray;
+                            width: 250px;
+                        }
+                    }
+                    .bt-3{
+                        margin-top: 50px;
+                        button{
+                            @include button;
+                            border-radius: 20px;
+                            width: 250px;
+                            text-transform: uppercase;
+                            transition: .2s linear;
+                            &:hover{
+                                background-color: $nav-text;
+                                border: 1px solid rgba(102, 102, 102, 0.1);
+                                color: $white;
+                                font-size:16px;
+                            }
+                        }
+                    }  
+                }
+                .note{
+                    text-align: center;
+                    padding-top: 15px;
+                    span{
+                        color: $blue;
+                        font-size:13px;
+                        font-weight: bold;
+                    }
+                }
+                .info{
+                    padding-top: 10px;
+                    text-align: center;
+                    li{
+                        font-size:14px;
+                    }
+                }
+                .nav-bar{
+                    text-align: center;
+                    padding-top: 20px;
+                    ul{
+                        li{
+                            list-style-type: none;
+                            display: inline-block;
+                            padding-bottom: 30px;
+                            a{
+                                font-size:14px;
+                                color: $blue;
+                                text-decoration:underline;
+                                text-decoration-color: $blue;
+                                padding-left: 20px;
+                                &:hover{
+                                    color: $nav-text;
+                                    text-decoration-color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // tab 4 sgcksgcsg l
+            .tab-pane{
+                .nav-4{
+                    @include container;
+                    ul{
+                        li{
+                            padding-left: 20px;
+                            a{
+                                color: $blue;
+                                padding: 0;
+                                transition: .2s all linear;
+                                font-size:15px;
+                                text-transform: capitalize;
+                                border-bottom: 2px solid $dark-grey;
+                            }
+                            .active{
+                                border-bottom: 2px solid $blue !important;
+                            }
+                        }
+                    }
+                }
+                .tab-content{
+                    .tab-pane{
+                        .from-grd{
+                            display: flex;
+                            justify-content: space-evenly;
+                            .from-1{
+                                label{
+
+                                    @include label;
+                                }
+                                select{
+                                    @include bt-1;
+                                    @include img1;
+                                }
+                            }
+                        }
+                        .to-grd{
+                            padding:0 0 30px 30px;
+                            display: grid;
+                            grid-template-columns: repeat(3,1fr);
+                            grid-gap: 20px;
+                            .to-1{
+                                label{
+                                    @include label;
+                                }
+                                input[type=text]{
+                                    @include bt-1;
+                                    @include img2;
+                                }
+                            }
+                            .bt-3{
+                                margin-top: 50px;
+                                button{
+                                    @include button;
+                                    border-radius: 20px;
+                                    width: 290px;
+                                    text-transform: uppercase;
+                                    transition: .2s linear;
+                                    &:hover{
+                                        background-color: $nav-text;
+                                        border: 1px solid rgba(102, 102, 102, 0.1);
+                                        color: $white;
+                                        font-size:16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .tab-pane{
+            .fig-grd{
+                @include container;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 20px;
+                padding-left: 30px;
+                .fig-1{
+                    label{
+                        @include label;
+                    }
+                    select{
+                        @include bt-1;
+                    }
+                    input[type=text]{
+                        @include bt-1;
+                    }
+                    ::placeholder{
+                        color: $black;
+                    }
+                }
+            }
+            .btc{
+                padding: 30px 20px 30px 0 !important; 
+                text-align: center;
+                button{
+                    @include button;
+                    width: 320px;
+                    border-radius: 20px;
+                    text-transform: uppercase;
+                    transition: .2s linear;
+                    &:hover{
+                    background-color: $nav-text;
+                    border: 1px solid rgba(102, 102, 102, 0.1);
+                    color: $white;
+                    font-size:16px;
+                    }
+                }
+            }
+        }
+        // My Booking Grid
+        .tab-pane{
+            .contet{
+                @include container;
+                margin: 13px auto;
+                text-align: center;
+                p{
+                    color: $Black_Light;
+                    font-size:14px;
+                }
+            }
+            .my-info{
+                padding:0 22%;
+                li{
+                    font-size:13px;
+                    color: $Black_Light;
+                }    
+            }
+            .my-main{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 20px;
+                .my-1{
+                    @include container;
+                    padding-left: 30px;
+                    label{
+                        @include label;
+                    }
+                    input[type=text]{
+                        @include bt-1;
+                    }
+                }
+                .bt-3{
+                    padding:55px 0 30px  0; 
+                    text-align: center;
+                    button{
+                        @include button;
+                        width: 320px;
+                        border-radius: 20px;
+                        text-transform: uppercase;
+                        transition: .2s linear;
+                        &:hover{
+                        background-color: $nav-text;
+                        border: 1px solid rgba(102, 102, 102, 0.1);
+                        color: $white;
+                        font-size:16px;
+                        }
+                    }
+                }
+            }
+        }
+        // More Section
+        .tab-pane{
+            .more-main{
+                @include container;
+                padding-left: 30px;
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                .more-my-main{
+                    .more-1{
+                        display: flex;
+                        .more-hold{
+                            img{
+                                // width:20%;
+                            }
+                        }
+                        .more-content{
+                            margin-left: 10px;
+                            h6{
+                                font-size:14px;
+                                padding-top: 10px;
+                                text-transform: uppercase;
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+                .lik{
+                    margin-left: 60px;
+                    ul{
+                        li{
+                            a{
+                                font-size:12px;
+                                color: $Black_Light;
+                                text-decoration:underline;
+                                &:hover{
+                                    text-decoration-color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                .nav-3{
+                    ul{
+                        li{
+                            padding-left: 20px;
+                            a{
+                                color: $blue;
+                                padding: 0;
+                                transition: .2s all linear;
+                                font-size:15px;
+                                text-transform: capitalize;
+                                border-bottom: 2px solid $dark-grey;
+                            }
+                            .active{
+                                border-bottom: 2px solid $blue;
+                            }
+                        }
+                    }
+                }
+                .tab-content{
+                    padding-left: 15px;
+                    .tab-pane{
+                        .return-grd{
+                            display: grid;
+                            grid-template-columns: repeat(3,1fr);
+                            grid-gap: 20px;
+                            .return-1{
+                                display: block;
+                                label{
+                                    @include label; 
+                                }
+                                input[type=text]{
+                                    @include bt-1;
+                                    @include img2;
+                                }
+                                ::placeholder{
+                                    color: $light-black;
+                                }
+                                select{
+                                    @include img1;
+                                    @include bt-1;
+                                    color: $gray;
+                                }
+                                .bt-plus{
+                                    text-align: center;
+                                    button{
+                                        @include button;
+                                        width: 40px;
+                                        height: 40px;
+                                        font-size: 18px;
+                                        color: $white;
+                                        background-color: $blue;
+                                        text-align: center;
+                                        border-radius: 30px;
+                                    }
+                                }
+                            }
+                            .perons{
+                                display: grid;
+                                grid-template-columns: repeat(3,1fr);
+                                grid-gap: 10px;
+                                .person-1{
+                                    label{
+                                        display: block;
+                                        color: $blue;
+                                        font-size:15px;
+                                        padding-top: 20px;
+                                    }
+                                    select{
+                                        @include bt-1;
+                                        width: 80px;
+                                        background-image: url(/images/p_adults.png);
+                                        background-repeat: no-repeat;
+                                        background-position: center right 20px;
+                                        cursor: pointer;
+                                    }
+                                    .range{
+                                        margin: 2px 0 0 12px;
+                                        span{
+                                            font-size:14px;
+                                        }
+                                    }
+                                }
+                            }
+                            .bt-2{
+                                margin: 30px 0;
+                                button{
+                                    @include button;
+                                    width: 320px;
+                                    border-radius: 20px;
+                                    text-transform: uppercase;
+                                    transition: .2s linear;
+                                    &:hover{
+                                    background-color: $nav-text;
+                                    border: 1px solid rgba(102, 102, 102, 0.1);
+                                    color: $white;
+                                    font-size:16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-pane{
+                .content{
+                    margin: 10px auto;
+                    text-align: center;
+                    p{
+                        font-size: 16px;
+                        color: $nav-text;
+                    }
+                }
+                .hotel-grd{
+                    @include container;
+                    display: flex;
+                    justify-content: space-around;
+                    .hotel-1{
+                        text-align: center;
+                        img{
+                            width:65%;
+                            cursor: pointer;
+                            object-fit: cover;
+                            padding: 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Thai Assistance Section
+.thai{
+    .thai-main{
+        @include container;
+        text-align: center;
+        padding: 50px 0;
+        h1{
+            font-size:34px;
+            color: $blue-head;
+            text-transform:uppercase;
+            font-weight: bold;
+            position: relative;
+            word-spacing: 10px;
+        }
+        ::after{
+            content:"";
+            position: absolute;
+            left: 46%;
+            bottom: -35%;
+            background-color: $yellow;
+            width: 120px;
+            height: 2px;
+        }
+    }
+    .thai-crd-back{
+        @include container;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 25px;
+        padding-left: 30px;
+        cursor: pointer;
+        .thai-crd{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            .thai-hold{
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+                .thai-content{
+                    padding: 15px;
+                    line-height: 20px;
+                    h3{
+                        font-size:14px;
+                        font-weight: bold;
+                        color: $blue;
+                    }
+                    .desc{
+                        p{
+                            color: $Black_Light;
+                            font-size:13px;
+                        }
+                    }
+                    .lik-2{
+                        @include container;
+                        display: flex;
+                        justify-content: end;
+                        a{
+                            font-size:14px;
+                            color: $blue;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            padding-right: 5px;
+                            &:hover{
+                                text-decoration: none;
+                                cursor: pointer;
+                            }
+                        }
+                        img{
+                            width: 25px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bt-plus{
+        text-align: center;
+        padding-top: 50px;
+        button{
+            @include button;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            color: $white;
+            background-color: $blue;
+            text-align: center;
+            border-radius: 30px;
+        }
+    }
+    .hr1{
+        text-align: center;
+        width: 80%;
+        margin: 25px auto;
+        background-color: $dark-grey;
+    }
+}
+.offer{
+    @include container;
+    .offer-content{
+        h1{
+            font-size:36px;
+            color: $blue-head;
+            text-transform: uppercase;
+            word-spacing: 10px;
+            font-weight: bold;
+            position: relative;
+        }
+        ::before{
+            position: absolute;
+            content: "";
+            width: 100px;
+            height: 2px;
+            background-color: $yellow;
+            bottom: -15px;
+        }
+    }
+    .offer-tabs{
+        position: relative;
+        .nav-6{
+            ul{
+                padding-top: 30px;
+                justify-content: center;
+                li{
+                    a{
+                        padding: 0;
+                        margin-left:15px ;
+                        color: $blue;
+                        text-transform: uppercase;
+                        font-size:15px;
+                        padding-bottom: 20px;
+                    }
+                }
+                .active{
+                    border-bottom: 2px solid $yellow;
+                }
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                .special-1{
+                    position: relative;
+                    .special-main{
+                        .spec-cont{
+                            width: 800px;
+                            .special-content{
+                                padding-top: 40px;
+                                width: 800px;
+                                img{
+                                    width: 700px;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                    .feature-main{
+                        position: absolute;
+                        top: 15px;
+                        right: -108px;
+                        width:500px;
+                        height: 650px;
+                        .feat-back{
+                            background-color: $blue;
+                            color: $white;
+                            height: 480px;
+                            margin: 0 50px 0 50px;
+                            .feature-hold{
+                                padding:15px;
+                                h2{
+                                    font-size:34px;
+                                    padding: 10px 0 0 15px;
+                                    position: relative;
+                                    span{
+                                        position: relative;
+                                    }
+                                    :after{
+                                        content: "";
+                                        position: absolute;
+                                        bottom: -10px;
+                                        right: 20px;
+                                        background-color: $yellow;
+                                        width: 120px;
+                                        height: 1px;
+                                    }
+                                }
+                                .feat-cont{
+                                    padding: 15px;
+                                    p{
+                                        color: $white;
+                                        font-size:16px;
+                                    }
+                                }
+                                .bt-n{
+                                    padding-left:30px;
+                                    button{
+                                        @include button;
+                                        width: 240px;
+                                        border-radius: 20px;
+                                        text-transform: uppercase;
+                                        transition: .3s all linear;
+                                        &:hover{
+                                            border: 1px solid $yellow;
+                                            background-color: transparent;
+                                            color: $white;
+                                        }
+    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .left-arrow{
+                        position: absolute;
+                        bottom: -50px;
+                        left: 20px;
+                        button{
+                            outline:none;
+                            border: none;
+                            background-color: transparent;
+                            border: 2px solid $blue;
+                            border-radius: 50px;
+                            width: 40px;
+                            height: 40px;
+                            padding:4px;
+                            .far{
+                                color: $blue;
+                            }
+                        }
+                    }
+                    .right-arrow{
+                        position: absolute;
+                        bottom: -50px;
+                        left: 100px;
+                        button{
+                            outline:none;
+                            border: none;
+                            background-color: transparent;
+                            border: 2px solid $blue;
+                            border-radius: 50px;
+                            width: 40px;
+                            height: 40px;
+                            padding:4px;
+                            .far{
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+            // Royal orchad
+            .tab-pane{
+                .special-2{
+                    position: relative;
+                    .special-main-1{
+                        .spec-cont-1{
+                            width: 800px;
+                            .special-content-1{
+                                padding-top: 40px;
+                                width: 800px;
+                                img{
+                                    width: 800px;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                    .feature-main-1{
+                        position: absolute;
+                        top: 15px;
+                        right: -58px;
+                        width:400px;
+                        height: 650px;
+                        .feat-back-1{
+                            background-color: $blue;
+                            color: $white;
+                            height: 480px;
+                            .feature-hold-1{
+                                padding:15px;
+                                h2{
+                                    font-size:34px;
+                                    padding: 10px 0 0 15px;
+                                    position: relative;
+                                    span{
+                                        position: relative;
+                                    }
+                                    :after{
+                                        content: "";
+                                        position: absolute;
+                                        bottom: -10px;
+                                        left: 0;
+                                        background-color: $yellow;
+                                        width: 120px;
+                                        height: 1px;
+                                    }
+                                }
+                                .feat-cont-1{
+                                    padding: 15px;
+                                    p{
+                                        color: $yellow;
+                                        padding-left: 4px;
+                                        font-size:18px;
+                                    }
+                                }
+                                .bt-n-1{
+                                    padding-left:30px;
+                                    button{
+                                        @include button;
+                                        width: 240px;
+                                        border-radius: 20px;
+                                        text-transform: uppercase;
+                                        transition: .3s all linear;
+                                        &:hover{
+                                            border: 1px solid $yellow;
+                                            background-color: transparent;
+                                            color: $white;
+                                        }
+    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.jumbot{
+    margin-top: 15%;
+    height: 650px;
+    padding-top: 50px;
+    background-color: $snow;
+    .container{
+        position: relative;
+        .head{
+            display: flex;
+            justify-content: space-between;
+            h1{
+                font-size:34px;
+                text-transform: uppercase;
+                word-spacing: 10px;
+                color: $blue-head;
+                position: relative;
+                font-weight: bold;
+                span{
+                    position: relative;
+                }
+                ::before{
+                    content: "";
+                    position: absolute;
+                    background-color: $yellow;
+                    width: 90px;
+                    height: 1px;
+                    left: 0;
+                    bottom: -6px;
+                }
+            }
+            a{
+                text-decoration: none;
+                padding-top: 8px;
+                color: $black;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+        .context{
+            transition: .3s all linear;
+            padding-top: 25px;
+            line-height: 30px;
+            width: 400px;
+            .context-main{
+                .context-slider{
+                    h2{
+                        font-size: 26px;
+                        color: $blue;
+                    }
+                    p{
+                        color: $grey-of;
+                        font-size: 15px
+                    }
+                    .bt-context{
+                        button{
+                            @include button;
+                            width:150px;
+                            border-radius: 20px;
+                            text-transform: uppercase;
+                            transition: .3s all linear;
+                            font-size: 14px;
+                            padding:3px 5px;
+                            background-color: $blue;
+                            color: $yellow;
+                            &:hover{
+                                background-color: $yellow;
+                                color: $blue-head;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .context-hold{
+            position: absolute;
+            top: 40px;
+            left: 44%;
+            .content-holder{
+                width: 630px;
+                overflow: hidden;
+                height: 440px;
+                img{
+                    width: 530px;
+                    height: 440px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .left-arrow-1{
+            position: absolute;
+            bottom: -90%;
+            left: 52%;
+            button{
+                outline:none;
+                border: none;
+                background-color: transparent;
+                border: 2px solid $blue;
+                border-radius: 50px;
+                width: 40px;
+                height: 40px;
+                padding:4px;
+                .far{
+                    color: $blue;
+                }
+            }
+        }
+        .right-arrow-1{
+            position: absolute;
+            bottom: -90%;
+            right: 10%;
+            button{
+                outline:none;
+                border: none;
+                background-color: transparent;
+                border: 2px solid $blue;
+                border-radius: 50px;
+                width: 40px;
+                height: 40px;
+                padding:4px;
+                .far{
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+.bg{
+    width: 100%;
+    object-fit: cover;
+    background-image: url(/images/bg.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    height: 679px;
+    background-position: 0% -643.667px;
+    .bg-content{
+        @include container;
+        padding-top: 120px;
+        text-align: center;
+        h1{
+            color: $blue-head;
+            font-size:32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            word-spacing: 5px;
+            span{
+                position:relative;
+            }
+            ::before{
+                content: "";
+                position: absolute;
+                bottom: -15px;
+                left: 60px;
+                width: 120px;
+                height:2px;
+                background-color: $yellow;
+            }
+        }
+        .para{
+            padding-top: 60px;
+            text-align: center;
+            p{
+                margin:0 auto;
+                color: $black;
+                font-size:17px;
+                font-weight: bold;
+                width: 400px;
+            }
+
+        }
+        .bg-grd{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 40px;
+            padding-top: 60px;
+            .bg-hold{
+                img{
+                    cursor: pointer;
+                    object-fit: cover;
+                }
+                .bg-text{
+                    padding-top: 20px;
+                    text-align:center;
+                    p{
+                        font-size: 20px;
+                        color: $blue;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+.news-main{
+    @include container;
+    padding-top: 60px;
+    .news{
+        text-align: center;
+        h1{
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            word-spacing: 5px;
+            color: $blue;
+            span{
+                position: relative;
+            }
+            ::before{
+                content: "";
+                position: absolute;
+                bottom: -20px;
+                right: 165px;
+                width: 120px;
+                height: 2px;
+                background-color: $yellow;
+            }
+        }
+    }
+    .bt-new{
+        padding-top: 40px;
+        text-align: center;
+        button{
+            @include button;
+            background-color: $blue;
+            color: $yellow;
+            border-radius:20px;
+            text-transform: uppercase;
+            width: 150px;
+
+        }
+    }
+    .new-crd{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+        padding-top: 60px;
+        .new-back{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            .new-crd-main{
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    opacity: 1;
+                    &:hover{
+                        cursor: pointer;
+                        opacity: .7;
+                    }
+                }
+                .new-content{
+                    padding:20px;
+                    cursor: pointer;
+                    h6{
+                        font-weight: bold;
+                        color: $blue;
+                        word-spacing: 8px;
+                    }
+                    p{
+                        color: $para;
+                        font-size: 13px;
+                        padding-top: 10px;
+                        word-spacing: 8px;
+                    }
+                }
+                .date{
+                    border-top:1px solid $login ;
+                    p{
+                        color: $para;
+                        padding: 13px 0 10px 20px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+.sub{
+    margin-top: 60px;
+    background-color: $snow;
+    height: 250px;
+    .sub-main{
+        @include container;
+        padding: 8% 0 8% 0;
+        display: flex;
+        justify-content: space-evenly;
+        h1{
+            font-size: 20px;
+            word-spacing: 4px;
+            color: $blue;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        input[type=text]{
+            width: 500px;
+            outline: none;
+            border: none;
+            border: 1px solid $blue;
+            border-radius: 30px;
+            padding: 8px;
+        }
+        ::placeholder{
+            padding-left: 15px;
+        }
+        button{
+            @include button;
+            border-radius: 25px;
+            width: 160px;
+            text-transform: uppercase;
+            color: $yellow;
+            background-color: $blue;
+            &:hover{
+                border: 2px solid $yellow;
+                background-color: transparent;
+                color: $nav-text;
+            }
+        }
+    }
+}
+.footer{
+    background-color: $nav-text;
+    .footer-main{
+        @include container;
+        padding-top: 60px;
+        .footer-grd{
+            display: grid;
+            grid-template-columns: repeat(2, 20% 80%); 
+            grid-gap: 30px;
+            position: relative;
+            .footer-grd-text{
+                h5{
+                    color: $yellow;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .footer-grd-1{
+                    padding-top: 20px;
+                    li{
+                        list-style-type: none;
+                        display: inline-block;
+                        margin-left: 5px;
+                        button{
+                            outline: none;
+                            cursor: pointer;
+                            border: none;
+                            padding: 4px;
+                            background-color: transparent;
+                            color: $white;
+                            border-radius: 30px;
+                            width: 35px;
+                            height: 35px;
+                            border: 1px solid $white;
+                            &:hover{
+                                color: $white;
+                                border: 1px solid $yellow;
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                    .ico{
+                        padding-top: 50px;
+                        .both{
+                            display:flex;
+                            padding-top: 10px;
+                            img{
+                                padding:6px 3px 0 0;
+                                width: 130px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+                ::after{
+                    content: "";
+                    width: 1px;
+                    height: 250px;
+                    position: absolute;
+                    left: 25%;
+                    top: -10px;
+                    background-color:$snow;
+                }
+            }
+        }
+        .grd-2{
+            .grd-3{
+                display: grid;
+                grid-template-columns: repeat(4, 25%); 
+                grid-gap: 20px;
+                .grd-text-1{
+                    padding: 10px 0 0 50px;
+                    h5{
+                        color: $yellow;
+                        font-size: 17px;
+                        cursor: pointer;
+                    }
+                    .lik{
+                        padding-top: 10px;
+                        a{
+                            width: 100%;
+                            cursor: pointer;
+                            display: inline-block;
+                            margin: 6px;
+                            color: $white;
+                            text-decoration: none;
+                            font-size: 15px;
+                            &:hover{
+                                color: $pink;
+                            }
+                        }
+                        i{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hr2{
+        width: 80%;
+        margin:20px auto;
+        background-color: $snow;
+    }
+    .info{
+        @include container;
+        padding-left: 50px;
+        .info-main{
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-size: 13px;
+                color: $white;
+                margin-bottom: 0;
+            }
+            img{
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+// @keyframes fadeIn {
+//  0%{
+//      transform: scale(0);
+//      opacity: 0;
+//  }   
+// }
